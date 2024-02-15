@@ -32,24 +32,37 @@
         </div>
         <div class="kerdes">
             <label>Milyennek vélted a kéregényt?</label>
-            <input type="radio" id="option1" name="option" value="option1" required>
-            <label for="option1">Remek</label>
-            <input type="radio" id="option2" name="option" value="option1" required>
-            <label for="option2">Borzalom</label>
-            <input type="radio" id="option3" name="option" value="option1" required>
-            <label for="option3">Hugy</label>
+            <div class="radio-container">
+                <input type="radio" id="option1" name="option" value="option1" required>
+                <label for="option1">Remek</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="option2" name="option" value="option2" required>
+                <label for="option2">Borzalom</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="option3" name="option" value="option3" required>
+                <label for="option3">Hugy</label>
+            </div>
         </div>
         <div class="kerdes">
-            <label>Ajánlaná másnak is a képregényt? </label>
-            <input type="radio" id="option1" name="option" value="option2" required>
-            <label for="option1">Biztoshh hogy nem xd</label>
-            <input type="radio" id="option2" name="option" value="option2" required>
-            <label for="option2">Igen</label>
-            <input type="radio" id="option3" name="option" value="option2" required>
-            <label for="option3">Nem</label>
+            <label>Ajánlanád másnak is?</label>
+            <div class="radio-container">
+                <input type="radio" id="option1" name="option2" value="option1" required>
+                <label for="option1">Igen</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="option2" name="option2" value="option2" required>
+                <label for="option2">Nem</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="option3" name="option2" value="option3" required>
+                <label for="option3">Talán</label>
+            </div>
         </div>
+        
        
-        <div class="submit-btn">
+        <div class="button">
             <button type="submit">Küldés</button>
         </div>
     </div>
