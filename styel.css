@@ -37,9 +37,6 @@ body {
     display: inline-block; 
     margin-right: 10px; 
 }
-.submit-btn {
-    margin-top: 10px;
-}
 
 nav ul {
     list-style-type: none;
