@@ -40,15 +40,53 @@ aside{
     flex: 0 0 20%;
     border: 1px solid black;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: stretch;
+    max-width: 600px;
 }
 
 nav{
     flex: 0 0 100%;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center; 
+    text-decoration: none;
+  }
+  
+nav li a:hover {
+    background-color: #afa5a5;
+  }
+
+  nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
 
 header{
     flex: 0 0 100%;
+    text-align: center;
 }
 
 footer{
@@ -60,4 +98,8 @@ footer{
 
 .kep img{
     max-width: 200px;
+}
+
+.hirdetes img{
+    max-width: 70px;
 }
