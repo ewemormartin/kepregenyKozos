@@ -12,6 +12,7 @@ body {
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
+    margin-top: 50px; 
     display: flex;
     flex-direction: column;
 }
@@ -22,6 +23,7 @@ body {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    display: inline-block;
 }
 .kerdes input[type="text"],
 .kerdes input[type="email"],
@@ -31,12 +33,9 @@ body {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
-.kerdes input[type="radio"],
-.kerdes input[type="checkbox"] {
-    margin-right: 5px;
-}
-.submit-btn {
-    margin-top: 10px;
+.kerdes input[type="radio"] {
+    display: inline-block; 
+    margin-right: 10px; 
 }
 
 nav ul {
@@ -45,12 +44,15 @@ nav ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
 nav li a {
     display: block;
     color: white;
-    text-align: center;
+    text-align: center; 
     padding: 10px;
     text-decoration: none;
   }
@@ -59,3 +61,26 @@ nav li a:hover {
     background-color: #afa5a5;
   }
 
+
+  nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+}
+button {
+    border-radius: 20px;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    margin: 5px 0px;
+    width: 40%;
+  }
+  
+  button:hover {
+    background-color: #111;
+  }
