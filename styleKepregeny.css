@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: Garamond, serif;
+    overflow-x: hidden;
   }
   
 .kepregeny{
@@ -143,20 +144,32 @@ aside .hirdetes{
 }
 
 @media screen and (max-width: 1215px) {
-    aside{
-        max-width: max-content;
-        max-height: max-content;
-        flex: 0 0 100%;
+    aside {
+        width: 100%;
+        margin: auto;
+        height: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
     }
-    aside .hirdetes{
+    aside .hirdetes {
         margin: 5px;
+        flex: 0 0 calc(33.33% - 10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    aside h1{
+    aside h1 {
         margin: 10px;
         text-align: center;
+        width: 100%;
+    }
+    aside .hirdetes img {
+        width: 100%;
+        height: auto;
+        max-width: 100px;
     }
 }
