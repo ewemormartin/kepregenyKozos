@@ -1,0 +1,32 @@
+html, body {
+    margin:0;
+    padding:0;
+  }
+  
+.kepregeny{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 900px;
+}
+
+.kep{
+    border: 1px solid black;
+    gap: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    max-width: 200px;
+}
+
+article{
+    display: flex;
+    flex: 0 0 80%;
+}
+
+aside{
+    display: flex;
+    flex: 0 0 20%;
+}
