@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    width: 400px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.kerdes {
+    margin-bottom: 10px;
+}
+.kerdes label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.kerdes input[type="text"],
+.kerdes input[type="email"],
+.kerdes textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.kerdes input[type="radio"],
+.kerdes input[type="checkbox"] {
+    margin-right: 5px;
+}
+.submit-btn {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+nav li a:hover {
+    background-color: #afa5a5;
+  }
+
