@@ -1,6 +1,8 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: Garamond, serif;
+    overflow-x: hidden;
   }
   
 .kepregeny{
@@ -36,19 +38,72 @@ article{
     flex: 0 0 80%;
 }
 
-aside{
-    flex: 0 0 20%;
-    border: 1px solid black;
-    text-align: center;
+.kep:nth-child(1){
+    background-color: rgb(165, 120, 209);
+}
+.kep:nth-child(2){
+    background-color: rgb(161, 211, 81);
+}
+.kep:nth-child(3){
+    background-color: rgb(71, 186, 194);
+}
+.kep:nth-child(4){
+    background-color: rgb(196, 78, 123);
+}
+.kep:nth-child(5){
+    background-color: rgb(93, 91, 218);
+    height: 270px;
+}
+.kep:nth-child(6){
+    background-color: rgb(230, 50, 44);
+    height: 280px;
+}
+.kep:nth-child(7){
+    background-color: rgb(60, 64, 87);
+}
+.kep:nth-child(8){
+    background-color: rgb(224, 152, 119);
+    height: 180px;
 }
 
 nav{
     flex: 0 0 100%;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center; 
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+nav li a:hover {
+    background-color: #afa5a5;
+  }
+
+  nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
 
 header{
     flex: 0 0 100%;
+    text-align: center;
 }
 
 footer{
@@ -59,5 +114,62 @@ footer{
 }
 
 .kep img{
+    width: 100%;
     max-width: 200px;
+    border: 1px solid black;
+}
+
+aside{
+    flex: 0 0 20%;
+    border: 1px solid black;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: baseline;
+    max-width: 500px;
+    max-height: 650px;
+    text-align: center;
+    background-color: #ce9b9b;
+}
+
+aside .hirdetes{
+    margin: 10px;
+}
+
+.hirdetes img{
+    max-width: 100px;
+    width: 100%;
+    gap: 0;
+}
+
+@media screen and (max-width: 1215px) {
+    aside {
+        width: 100%;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    aside .hirdetes {
+        margin: 5px;
+        flex: 0 0 calc(33.33% - 10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    aside h1 {
+        margin: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    aside .hirdetes img {
+        width: 100%;
+        height: auto;
+        max-width: 100px;
+    }
 }
